@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.table-fixed {
+  table-layout: fixed; /* Prevents column resizing */
+}
+
+table th, table td {
+  white-space: nowrap; /* Prevents text wrapping */
+  overflow: hidden; /* Hides overflow text */
+  text-overflow: ellipsis; /* Adds ellipsis for truncated text */
+}
